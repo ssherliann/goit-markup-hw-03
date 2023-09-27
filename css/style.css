@@ -1,12 +1,16 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
     color: #434455;
     background-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
@@ -17,6 +21,8 @@ a {
     text-decoration: none;
 }
 
+/*----------------------HEADER------------------------*/
+
 a:hover {
     color: #404bbf;
 }
@@ -25,9 +31,6 @@ a:focus {
     color: #404bbf;
 }
 
-.header {
-
-}
 
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -38,61 +41,107 @@ a:focus {
     text-transform: uppercase;
     color: #2e2f42;
     color: #4d5ae5;
+    margin-left: 156px;
+    margin-right: 76px;
+
 }
 
 .logo-part {
     color: #2e2f42;
 }
 
+
 .header-link {
+    color:  #2E2F42;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    letter-spacing: 0.02em; 
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 24px 0;
 }
 
-.header-link-first {
-    color:#2e2f42;
+.links {
+    display: flex;
+}
+
+.nav {
+    color: #2E2F42;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 40px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .header-address {
     font-style: normal;
+    display: flex;
+    align-items:center;
+    gap: 40px;
+    margin-left: 332px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-.header-link-address {
+.header-link-address-mail {
     color: #434455;
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
 
+.header-link-address-tel {
+    color: #434455;
+    font-weight: 400;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+
+}
+
+/*----------------------------------------------------------------*/
+/*-----------------------SECTION-HERO-----------------------------*/
+
 .section-hero {
+    width: 100%;
+    height: 600px;
     background: #2E2F42;
-    flex-shrink: 0;
+    padding:188px 0;
 }
-
-.section-features {
-    color: #2e2f42;
-}
-
 .section-hero-title {
     color: #FFFFFF;
-    text-align: center;
     font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07; 
+    line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 58px;
 }
 
 .section-hero-btn {
-    background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
+    background:  #4D5AE5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
+    color:#ffffff;
+    cursor:pointer;
+    display: block;
+    min-width:169px;
+    height:56px;
+    border: none;
+    border-radius:4px;
+    margin: 0 auto;
 }
 
 .section-hero-btn:hover {
@@ -101,6 +150,26 @@ a:focus {
 
 .section-hero-btn:focus {
     background-color: #404BBF;
+}
+
+/*----------------------------------------------------------------*/
+/*-----------------------SECTION-FEATURES------------------------------*/
+
+.section-features {
+    color: #2e2f42;
+}
+.section-features-title {
+    visibility: hidden;
+}
+
+.features {
+    width:1158px;
+    display: flex;
+    align-items:center;
+    gap: 24px;
+}
+.section-features-container {
+    margin: 96px 156px 120px;
 }
 
 .section-features {
@@ -113,23 +182,37 @@ a:focus {
 .section-features-description {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 8px;
 }
+
+/*----------------------------------------------------------------*/
+/*-----------------------SECTION-TEAM------------------------------*/
 
 .section-team {
     background-color: #F4F4FD;
+    width: 1440px;
+    height: 732px;
+    padding:120px 0; 
 }
 
 .section-team-title {
     font-size: 36px;
-    line-height: 1.11;
+    line-height:1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-transform: capitalize;
+    color:#2e2f42;
+    margin-bottom:72px;
+    gap:24px;
 }
 
 .section-team-list {
     background-color: #FFFFFF;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    margin: 72px 156px 120px;
+    gap: 24px;
 }
 
 .section-team-members {
