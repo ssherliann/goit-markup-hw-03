@@ -78,6 +78,7 @@ a:focus {
 
 .header-container {
     display: flex;
+    padding: 0 15px;
 }
 
 .nav {
