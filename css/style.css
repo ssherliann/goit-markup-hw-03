@@ -21,7 +21,8 @@ ul {
 
 .header-logo, 
 .header-link, 
-.header-link-address {
+.header-link-address,
+.footer-logo {
     text-decoration: none;
 }
 
