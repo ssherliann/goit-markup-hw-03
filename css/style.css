@@ -81,6 +81,7 @@ a:focus {
 .header-container {
     display: flex;
     margin: 0 auto;
+    padding: 24px 0;
 }
 
 .nav {
@@ -90,7 +91,6 @@ a:focus {
     letter-spacing: 0.02em; 
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .navigation {
@@ -110,8 +110,6 @@ a:focus {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .header-link-address {
@@ -156,7 +154,7 @@ a:focus {
     min-width:169px;
     height:56px;
     border: none;
-    border-radius:4px;
+    border-radius: 4px;
     margin: 0 auto;
 }
 
@@ -208,7 +206,7 @@ a:focus {
     letter-spacing: 0.02em;
 }
 
-.features-title {
+.features-item {
     width: calc((100% - 72px) / 4);
 }
 
@@ -293,6 +291,7 @@ a:focus {
 
 .portfolio {
     width: calc((100% - 48px) / 3);
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .portfolio-description {
