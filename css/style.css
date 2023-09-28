@@ -1,8 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.125em;
+    line-height: 1.5;
     color: #434455;
     background-color: #FFFFFF;
 }
@@ -20,7 +19,9 @@ ul {
     padding: 0;
 }
 
-a {
+.header-logo, 
+.header-link, 
+.header-link-address {
     text-decoration: none;
 }
 
@@ -112,20 +113,13 @@ a:focus {
     margin-bottom: 24px;
 }
 
-.header-link-address-mail {
+.header-link-address {
     color: #434455;
-    font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
 }
 
-.header-link-address-tel {
-    color: #434455;
-    font-weight: 400;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
 
-}
 
 /*----------------------------------------------------------------*/
 /*-----------------------SECTION-HERO-----------------------------*/
@@ -136,6 +130,7 @@ a:focus {
     background: #2E2F42;
     padding: 188px 0;
 }
+
 .section-hero-title {
     color: #FFFFFF;
     font-size: 56px;
