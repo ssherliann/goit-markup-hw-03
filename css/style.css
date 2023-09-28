@@ -2,17 +2,22 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: 2%;
+    letter-spacing: 0.125em;
     color: #434455;
     background-color: #FFFFFF;
 }
 
-* {
-    box-sizing: border-box;
+h1,
+h2,
+h3,
+p{
+    margin:0;
 }
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -20,9 +25,10 @@ a {
 }
 
 img {
-    display: block 
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-
 
 a:hover {
     color: #404bbf;
@@ -30,6 +36,15 @@ a:hover {
 
 a:focus {
     color: #404bbf;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1158px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*----------------------HEADER------------------------*/
@@ -41,11 +56,8 @@ a:focus {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
     color: #4d5ae5;
-    margin-left: 156px;
     margin-right: 76px;
-
 }
 
 .logo-part {
@@ -62,13 +74,10 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em; 
     font-size: 16px;
-    padding: 24px 0;
 }
 
 .header-container {
     display: flex;
-    width: 1158px; 
-    padding: 0 15px;
 }
 
 .nav {
@@ -78,11 +87,19 @@ a:focus {
     letter-spacing: 0.02em; 
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-address {
@@ -179,8 +196,6 @@ a:focus {
     display: flex;
     align-items:center;
     gap: 24px;
-    margin-left: 156px;
-    margin-right: 156px;
 }
 
 .features-title {
@@ -222,10 +237,8 @@ a:focus {
 }
 
 .team-list {
-
     display: flex;
     align-items: center;
-    margin: 72px 156px 120px;
     gap: 24px;
 }
 
@@ -240,8 +253,7 @@ a:focus {
 }
 
 .team-member-first{
-    width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
+
 }
 
 .members{
@@ -279,8 +291,6 @@ a:focus {
     flex-wrap: wrap; 
     column-gap: 24px; 
     row-gap: 48px;
-    margin-left: 156px;
-    margin-right: 156px;
 }
 
 .portfolio-description {
@@ -301,7 +311,6 @@ a:focus {
 }
 
 .portfolio-item-first {
-    width: calc((100% - 48px) / 3); 
 }
 
 .portfolio-description {
