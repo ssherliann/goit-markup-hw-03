@@ -41,8 +41,7 @@ a:focus {
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
     width: 1158px;
     justify-content: center;
@@ -76,6 +75,7 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em; 
     font-size: 16px;
+    padding: 24px 0;
 }
 
 .header-container {
@@ -245,7 +245,6 @@ a:focus {
     color: #2e2f42;
     margin-bottom: 8px;
     text-align: center;  
-    border-radius: 0px 0px 4px 4px;
 }
 
 .members{
@@ -255,6 +254,7 @@ a:focus {
 
 .member-list {
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .team-description {
